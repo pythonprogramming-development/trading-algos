@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import time
 import math
+
 def minute_convertion(timeframe,data):
     
     i=0

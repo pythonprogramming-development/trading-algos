@@ -23,7 +23,7 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 basic stock trading algos 
 
 ### useful commands to run project
-- python filename
+- python filename.py
 
 ### Packages used
 - pip install google-colab
@@ -31,6 +31,8 @@ basic stock trading algos
 - numpy 
 - time
 - math
+- pip install matplotlib
+- pip install "dask[complete]"
 
 ## Subscribe and Stay Updated!
 

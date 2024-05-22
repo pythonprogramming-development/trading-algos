@@ -4,6 +4,7 @@ import numpy as np
 from nsepy import get_history
 from datetime import date
 import matplotlib.pyplot as plt
+
 plt.style.use('fivethirtyeight')
 
 #Taking Input
