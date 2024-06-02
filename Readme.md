@@ -24,7 +24,10 @@ basic stock trading algos
 
 ### useful commands to run project
 - python filename.py
+- pip install package name
+- pip show package name
 
+- [https://www.freecodecamp.org/news/algorithmic-trading-in-python/](https://www.freecodecamp.org/news/algorithmic-trading-in-python/)
 ### Packages used
 - pip install google-colab
 - pandas 
