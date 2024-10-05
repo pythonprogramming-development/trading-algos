@@ -29,18 +29,13 @@ basic stock trading algos
 - pip install package-name
 - pip freeze > requirements.txt
 - pip install -r requirements.txt  
-- python filename.py
-- pip show package name
 
-- [https://www.freecodecamp.org/news/algorithmic-trading-in-python/](https://www.freecodecamp.org/news/algorithmic-trading-in-python/)
 ### Packages used
 - google-colab
 - pandas 
 - numpy 
 - time
 - math
-- pip install matplotlib
-- pip install "dask[complete]"
 
 ## Subscribe and Stay Updated!
 
