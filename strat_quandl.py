@@ -36,4 +36,3 @@ import matplotlib.pyplot as plt
 adj_price.plot()
 mav.plot()
 
-# https://www.freecodecamp.org/news/algorithmic-trading-in-python/

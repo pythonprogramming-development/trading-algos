@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import time
 import math
+
 new_df = pd.read_csv("data.csv")
 new_df = new_df[['date','open','high','low','close','volume']]
 new_df.head()
