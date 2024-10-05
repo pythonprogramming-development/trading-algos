@@ -24,9 +24,14 @@ basic stock trading algos
 
 ### useful commands to run project
 - python filename
+-
+### How to setup project
+- pip install package-name
+- pip freeze > requirements.txt
+- pip install -r requirements.txt  
 
 ### Packages used
-- pip install google-colab
+- google-colab
 - pandas 
 - numpy 
 - time
