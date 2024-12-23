@@ -1,5 +1,3 @@
-# conversion code of Candles to hikenashi
-
 import pandas as pd
 import numpy as np
 import time
