@@ -41,6 +41,7 @@ basic stock trading algos
 - pip install package-name
 - pip freeze > requirements.txt
 - pip install -r requirements.txt  
+To update any python package
  pip install nsepy --upgrade 
 
 ### Packages used
