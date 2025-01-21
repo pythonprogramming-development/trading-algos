@@ -1,7 +1,7 @@
 # nsepy library depracated 
-from datetime import datetime
+# from datetime import datetime
 # from nsepy import get_history
-from datetime import date
+# from datetime import date
 
 # Rel = get_history(symbol='INFY',
 #                    start=date(2024,12,16),
@@ -16,11 +16,11 @@ from datetime import date
 # print(my_array2)
 
 
-def printTohtml(Alist, htmlfile):    
-    html =  "<html>\n<head></head>\n<style>p { margin: 0 !important; }</style>\n<body>\n"
+# def printTohtml(Alist, htmlfile):    
+#     html =  "<html>\n<head></head>\n<style>p { margin: 0 !important; }</style>\n<body>\n"
 
-    title = "Study - User - zip file -  Last date modified"
-    html += '\n<p>' + title + '</p>\n'
+#     title = "Study - User - zip file -  Last date modified"
+#     html += '\n<p>' + title + '</p>\n'
 
     # for line in Alist:
     #     para = '<p>' + line + '</p>'
@@ -44,9 +44,12 @@ from datetime import date
 from jugaad_data.nse import stock_csv, stock_df
 
 # Download as pandas dataframe
-df = stock_df(symbol="SBIN", from_date=date(2020,1,1),
-            to_date=date(2020,1,30), series="EQ")
+df = stock_df(symbol="SBIN", from_date=date(2025,1,20),
+            to_date=date(2025,1,20), series="EQ")
 print(df.head())
 
 # https://github.com/jugaad-py/jugaad-data
 # https://github.com/NSEDownload/NSEDownload
+
+# pip install jugaad_data pandas
+# python histortical_data.py

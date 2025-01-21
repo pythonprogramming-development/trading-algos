@@ -20,17 +20,6 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 
 ### About the app
-basic stock trading algos 
-Stock (Equity data)
-Index data
-Stock option data
-Stock future data
-Index option data
-Index future data
-India Vix (Volatility data)
-Expiry dates in a year and month
-PE Ratio
-conversion code of Candles to hikenashi
 
 ### useful commands to run project
 - python filename

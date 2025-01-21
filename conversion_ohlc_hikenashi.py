@@ -2,6 +2,9 @@ import pandas as pd
 import numpy as np
 import time
 import math
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from mplfinance.original_flavor import candlestick_ohlc
 
 new_df = pd.read_csv("data.csv")
 new_df = new_df[['date','open','high','low','close','volume']]
@@ -50,9 +53,22 @@ def HA(df, ohlc=['open', 'high', 'low', 'close']):
     return df
 z=HA(new_df)
 z.head()             
-# date	open	high	low	close	volume
-# 0	2018-04-12 09:15:00+05:30	294.4	295.8	293.2	294.4	55378
-# 1	2018-04-12 09:20:00+05:30	294.4	294.4	292.6	293.2	32219
-# 2	2018-04-12 09:25:00+05:30	293.8	293.8	292.6	293.0	23643
-# 3	2018-04-12 09:30:00+05:30	293.4	293.4	292.8	292.8	12313
-# 4	2018-04-12 09:35:00+05:30	293.1	293.1	291.5	292.2	32198
+
+# Convert date to datetime and then to float for plotting
+new_df['date'] = pd.to_datetime(new_df['date'])
+new_df['date'] = new_df['date'].apply(mdates.date2num)
+
+# Create a new DataFrame for plotting
+plot_df = new_df[['date', 'open', 'high', 'low', 'close']]
+
+# Plotting
+fig, ax = plt.subplots()
+candlestick_ohlc(ax, plot_df.values, width=0.01, colorup='g', colordown='r')
+ax.xaxis_date()
+ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
+plt.xticks(rotation=45)
+plt.xlabel('Date')
+plt.ylabel('Price')
+plt.title('OHLC Chart')
+plt.grid(True)
+plt.show()
